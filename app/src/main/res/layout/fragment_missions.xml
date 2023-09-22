@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MissionsFragment.MissionsFragment">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/missions_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mission_gradient"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/missHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missions"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pph"
+            android:contentDescription="Profile Image"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- TabLayout and ViewPager -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/missions_top_layout">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/missions_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#1C2834"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@color/tab_color"
+            app:tabTextColor="@color/white" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/missions_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/missions_tabLayout" />
+    </RelativeLayout>
+
+</RelativeLayout>

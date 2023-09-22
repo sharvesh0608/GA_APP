@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="genBlack">#212429</color>
+    <color name="profile_back">#064264</color>
+    <color name="tab_color">#27619E</color>
+    <color name="tab_text_unselected">#FFFFFF</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homenav"
+    app:startDestination="@id/missionsFragment">
+
+    <fragment
+        android:id="@+id/missionsFragment"
+        android:name="com.sharveshapps.myapplication.Home.MissionsFragment.MissionsFragment"
+        android:label="fragment_missions"
+        tools:layout="@layout/fragment_missions" >
+        <action
+            android:id="@+id/action_missionsFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.sharveshapps.myapplication.Home.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
